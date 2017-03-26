@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>color-select</title>
+		<link rel="stylesheet" type="text/css" href="color.css">
+		<script type="text/javascript" src="color.js"></script>
+		<script src="jscolor.js"></script>
+	</head>
+	<body>
+		<div id="bar">
+			<h1>Color Select<span class="name">&nbsp;&nbsp;&nbsp;&nbsp;17web-found 資工三甲 403261273 吳曉琪</span></h1>
+			
+		</div>
+		<div id="main1">
+			<div id="game"></div>
+		</div>
+		
+		<div id="main2">
+			<div id="color"></div>
+			<div ><div>
+			<script>
+			function update(jscolor) {
+				// 'jscolor' instance can be used as a string
+				document.getElementById('color').style.backgroundColor = '#' + jscolor
+			}
+			</script>
+			<div id="panel">
+				<input class="jscolor {onFineChange:'update(this)'}" value="" id="color1"/><br/><br/>
+				HEX<input type="text" name="colorCode" value="#"/><br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R<input type="text" name="color-r" value="0"/><br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G<input type="text" name="color-g" value="0"/><br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B<input type="text" name="color-b" value="0"/>
+			</div>
+		</div>
+	</body>
+</html>
